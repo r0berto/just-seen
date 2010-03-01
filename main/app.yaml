@@ -1,0 +1,15 @@
+application: just-seen
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /pages
+  static_dir: pages
+
+- url: /.*
+  script: helloworld.py
+
